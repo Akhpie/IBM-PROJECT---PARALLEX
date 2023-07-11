@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Search Website</title>
+    <link href="https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="movies.css">
+
+</head>
+<body>
+    <div class="wrapper">
+        <div class="logo">
+            <div class ="container">
+                <p>IBM<span>Proj</span></p>
+            </div>
+        </div>
+        <div class ="search-container">
+            <div class="search-element">
+                <h3>Search Movie:</h3>
+                <input type="text" class="form-control" id="movie-search-box" onkeyup="findMovies()" onclick="findMovies()">
+
+                <div class="search-list" id="search-list">
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="result-container">
+                <div class="result-grid" id="result-grid">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="movie.js"></script>
+</body>
+</html>
