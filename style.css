@@ -4,12 +4,25 @@
   box-sizing: border-box;
 }
 
+.navbar-brand{
+  color: #fff;
+}
+.logo{
+  color: #fff !important;
+}
+.navbar-collapse {
+  /* flex-basis: 100%; */
+  flex-grow: 0 !important;
+  align-items: center;
+  justify-content: space-around;
+}
 .navbar {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   padding: 30px;
-  background-image: linear-gradient(60deg, rgb(47, 46, 46), rgb(41, 40, 40), grey);
+  /* background-image: linear-gradient(323deg, rgb(32, 32, 32), rgb(21, 21, 78), rgb(23, 32, 49), rgb(32, 32, 32)); */
+  background-image: url('https://www.hdwallpapers.in/download/starry_sky_during_nighttime_space_hd_galaxy-2560x1440.jpg');
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   position: sticky;
 }
@@ -62,6 +75,7 @@
   transform: scaleX(1);
 }
 
+
 .navbar ul li a:after {
   content: '';
   position: absolute;
@@ -78,10 +92,9 @@
   transform: scaleX(1);
 }
 
-/* Media Query for Mobile Devices */
 @media only screen and (max-width: 768px) {
   .navbar {
-    flex-direction: row;
+    flex-direction: block;
     padding: 10px;
   }
 
@@ -90,7 +103,7 @@
   }
 
   .navbar ul {
-    flex-direction: row;
+    flex-direction: block;
   }
 
   .navbar ul li {
@@ -134,4 +147,5 @@
   .navbar .menu-items.active {
     display: block;
   }
-}
+} 
+
