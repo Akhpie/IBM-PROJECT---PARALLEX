@@ -6,14 +6,6 @@
     --light-dark-color:#292929;
     --yellow-color:#d4aa11;
 }
-*{
-    padding:0;
-    margin:0;
-    box-sizing: border-box;
-}
-body{
-    font-family: 'Belanosima', sans-serif;
-}
 a{
     text-decoration: none;
 }
@@ -67,8 +59,10 @@ img{
 .search-element .form-control{
     padding: 1rem 2rem;
     font-size: 1.4rem;
-    border-top-left-radius: 3px;
-    border-bottom-left-radius:3px;
+    /* border-top-left-radius: 3px;
+    border-bottom-left-radius:3px; */
+    border-radius: 15px;
+    border: none;
     outline: none;
     color: var(--light-dark-color);
     width: 350px;
