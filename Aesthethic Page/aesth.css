@@ -1,0 +1,392 @@
+
+
+.neumorphic-container {
+  /* background-color: #f2f2f2; */
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  height: 120vh;
+  margin-left: 100px;
+  margin-right: 100px;
+  background-size: 200% 200%;
+  animation: gradientAnimation 10s ease infinite;
+  background: #dedede;
+  box-shadow: inset -6px 6px 13px #a4a4a4, inset 6px -6px 13px #ffffff;
+  display: grid;
+  grid-template-columns: 9fr 9fr;
+  margin-bottom: 10px;
+}
+
+@media (max-width:768px) {
+  .neumorphic-container{
+    height: 220vh;
+    margin-left: 0px;
+    margin-right: 0px;
+    display: block;
+  }
+  
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+    /* transform: rotate(0deg); */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+    /* transform: rotateX(360deg); */
+  }
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.containerrr {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-left: -10px;
+}
+
+.neumorphic-card {
+  background-color: #f2f2f2;
+  border-radius: 20px;
+  padding: 40px;
+  text-align: center;
+  animation: fadeIn 1s;
+  margin: 20px;
+  background: linear-gradient(315deg, #c8c8c8, #eeeeee);
+  box-shadow: -5px -5px 10px #8e8e8e, 5px 5px 10px #ffffff;
+}
+
+h1 {
+  font-size: 28px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.neumorphic-button:hover {
+  box-shadow: none;
+}
+
+.neumorphic-input {
+  background-color: #f2f2f2;
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  font-size: 16px;
+  margin-bottom: 10px;
+  background: linear-gradient(315deg, #c8c8c8, #eeeeee);
+  box-shadow: -5px -5px 10px #8e8e8e, 5px 5px 10px #ffffff;
+}
+.neumorphic-input:focus {
+  box-shadow: none;
+}
+
+.neumorphic-submit-button {
+  background-color: #f2f2f2;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+  background: linear-gradient(315deg, #c8c8c8, #eeeeee);
+  box-shadow: -5px -5px 10px #8e8e8e, 5px 5px 10px #ffffff;
+}
+
+.neumorphic-submit-button:hover {
+  box-shadow: none;
+}
+
+/* credit card */
+.credit-card-holder {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  perspective: 1000px;
+  cursor: pointer;
+  animation: fadeIn 1s;
+}
+
+.credit-card {
+  position: relative;
+  width: 400px;
+  height: 250px;
+  transform-style: preserve-3d;
+}
+
+.card-front,
+.card-back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  transition: transform 0.6s;
+}
+
+.card-front {
+  transform: rotateY(0deg);
+  border-radius: 5px;
+  background: linear-gradient(315deg, #f0f0f0, #cacaca);
+  box-shadow: -5px -5px 7px #a1a1a1, 5px 5px 7px #ffffff;
+}
+
+.card-back {
+  transform: rotateY(180deg);
+  border-radius: 5px;
+  background: linear-gradient(315deg, #f0f0f0, #cacaca);
+  box-shadow: -5px -5px 7px #a1a1a1, 5px 5px 7px #ffffff;
+}
+
+.card-logo {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 60px;
+  height: 40px;
+  background-color: #ccc;
+}
+
+.card-chip {
+  position: absolute;
+  top: 70px;
+  left: 20px;
+  width: 60px;
+  height: 40px;
+  background-color: #999;
+}
+
+.card-number {
+  position: absolute;
+  top: 120px;
+  left: 20px;
+  max-width: 260px;
+  height: 40px;
+  background-color: #ddd;
+  color: #303030;
+  font-family: "Courier New", monospace;
+  font-size: 18px;
+  letter-spacing: 3px;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.card-info {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+}
+
+.card-name {
+  width: 200px;
+  height: 30px;
+  background-color: #ddd;
+  color: #303030;
+  font-family: "Courier New", monospace;
+  font-size: 16px;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.card-expiry {
+  width: 100px;
+  height: 30px;
+  background-color: #ddd;
+  color: #303030;
+  font-family: "Courier New", monospace;
+  font-size: 16px;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.card-magnetic-stripe {
+  position: absolute;
+  top: 70px;
+  left: 20px;
+  width: 360px;
+  height: 40px;
+  background-color: #999;
+}
+
+.card-cvv {
+  position: absolute;
+  top: 130px;
+  left: 290px;
+  width: 80px;
+  height: 40px;
+  background-color: #999;
+  color: #303030;
+  font-family: "Courier New", monospace;
+  font-size: 18px;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 5px;
+}
+
+.credit-card:hover .card-front {
+  transform: rotateY(-180deg);
+}
+
+.credit-card:hover .card-back {
+  transform: rotateY(360deg);
+}
+
+/* clock */
+
+.clock {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin: 0 auto;
+  margin-top: 50px;
+  background-color: #f2f2f2;
+  box-shadow: 10px 10px 20px #c9c9c9, -10px -10px 20px #ffffff;
+  position: relative;
+  overflow: hidden;
+  animation: fadeIn 1s;
+  background: #dedede;
+  box-shadow: inset -7px 7px 14px #a0a0a0, inset 7px -7px 14px #ffffff;
+}
+
+.clock .hour-hand,
+.clock .minute-hand,
+.clock .second-hand {
+  background-color: #4d4d4d;
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  transform-origin: bottom center;
+  transition: transform 0.5s ease-in-out;
+}
+
+.clock .hour-hand {
+  width: 7px;
+  height: 60px;
+  border-radius: 4px;
+  transform: translateX(-50%) rotate(90deg);
+}
+
+.clock .minute-hand {
+  width: 6px;
+  height: 80px;
+  border-radius: 3px;
+  transform: translateX(-50%) rotate(180deg);
+}
+
+.clock .second-hand {
+  width: 4px;
+  height: 90px;
+  border-radius: 2px;
+  transform: translateX(-50%) rotate(270deg);
+  background-color: #ff5555;
+}
+
+.clock .center-dot {
+  width: 10px;
+  height: 10px;
+  background-color: #4d4d4d;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.digital-clock {
+  text-align: center;
+  font-size: 24px;
+  margin-top: 20px;
+  animation: fadeIn 1s;
+}
+
+/* Neumorphic Portfolio Card */
+.portfolio-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  width: 300px;
+  height: 400px;
+  padding: 20px;
+  border-radius: 20px;
+  transition: box-shadow 0.3s ease-in-out;
+  animation: fadeIn 1s;
+  /* background: #dedede;
+  box-shadow: inset -7px 7px 14px #a0a0a0, inset 7px -7px 14px #ffffff; */
+  box-shadow: 12px 12px 25px rgba(0, 0, 0, 0.2),
+    -12px -12px 25px rgba(255, 255, 255, 0.8);
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+.portfolio-card:hover {
+  /* box-shadow: 12px 12px 25px rgba(0, 0, 0, 0.2),
+    -12px -12px 25px rgba(255, 255, 255, 0.8); */
+    background: #dedede;
+  box-shadow: inset -7px 7px 14px #a0a0a0, inset 7px -7px 14px #ffffff;
+}
+
+.portfolio-card img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.portfolio-card h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.portfolio-card p {
+  font-size: 16px;
+  text-align: center;
+}
+
+/* Neumorphic Star Rating */
+.star-rating {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.star-rating input[type="radio"] {
+  display: none;
+}
+
+.star-rating label {
+  display: inline-block;
+  font-size: 30px;
+  color: #f0f0f0;
+  cursor: pointer;
+  transition: color 0.3s ease-in-out;
+}
+
+.star-rating label:hover,
+.star-rating input[type="radio"]:checked ~ label {
+  color: #303030;
+  text-shadow: inset -7px 7px 14px #a0a0a0, inset 7px -7px 14px #ffffff;
+}
