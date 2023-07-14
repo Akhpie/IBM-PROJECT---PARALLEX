@@ -67,8 +67,13 @@
   text-align: center;
   animation: fadeIn 1s;
   margin: 20px;
-  background: linear-gradient(315deg, #c8c8c8, #eeeeee);
-  box-shadow: -5px -5px 10px #8e8e8e, 5px 5px 10px #ffffff;
+   background: linear-gradient(315deg, #c8c8c8, #eeeeee);
+  /* box-shadow: -5px -5px 10px #8e8e8e, 5px 5px 10px #ffffff;  */
+  /* box-shadow: 12px 12px 25px rgba(0, 0, 0, 0.2),
+  -12px -12px 25px rgba(255, 255, 255, 0.8); */
+  background: linear-gradient(145deg, #cacaca, #f0f0f0);
+box-shadow:  5px 5px 12px #bababa,
+             -5px -5px 12px #ffffff;
 }
 
 h1 {
@@ -95,8 +100,12 @@ p {
   padding: 10px;
   font-size: 16px;
   margin-bottom: 10px;
-  background: linear-gradient(315deg, #c8c8c8, #eeeeee);
-  box-shadow: -5px -5px 10px #8e8e8e, 5px 5px 10px #ffffff;
+  /* background: linear-gradient(315deg, #c8c8c8, #eeeeee);
+  box-shadow: -5px -5px 10px #8e8e8e, 5px 5px 10px #ffffff; */
+
+  background: #e0e0e0;
+box-shadow: inset -5px 5px 10px #7b7b7b,
+            inset 5px -5px 10px #ffffff;
 }
 .neumorphic-input:focus {
   box-shadow: none;
@@ -109,13 +118,20 @@ p {
   padding: 10px 20px;
   font-size: 16px;
   cursor: pointer;
-  transition: transform 0.3s, box-shadow 0.3s;
-  background: linear-gradient(315deg, #c8c8c8, #eeeeee);
-  box-shadow: -5px -5px 10px #8e8e8e, 5px 5px 10px #ffffff;
+  /* transition: transform 0.3s, box-shadow 0.3s; */
+  /* background: linear-gradient(315deg, #c8c8c8, #eeeeee);
+  box-shadow: -5px -5px 10px #8e8e8e, 5px 5px 10px #ffffff; */
+
+  background: #e0e0e0;
+  box-shadow: inset -5px 5px 10px #7b7b7b,
+              inset 5px -5px 10px #ffffff;
 }
 
 .neumorphic-submit-button:hover {
-  box-shadow: none;
+  /* box-shadow: none; */
+  transition: 0.7s;
+  background: linear-gradient(315deg, #c8c8c8, #eeeeee);
+  box-shadow: -5px -5px 10px #8e8e8e, 5px 5px 10px #ffffff; 
 }
 
 /* credit card */
