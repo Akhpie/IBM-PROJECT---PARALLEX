@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .button {
+      position: relative;
+      display: inline-block;
+      width: 60px;
+      height: 60px;
+      background: #f0f0f0;
+      border-radius: 50%;
+      box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2), -4px -4px 8px rgba(255, 255, 255, 0.7);
+      transition: box-shadow 0.3s;
+      cursor: pointer;
+    }
+    
+    .button:hover {
+      box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.2), -6px -6px 12px rgba(255, 255, 255, 0.7);
+    }
+    
+    .button.play:before, .button.pause:before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    
+    .button.play:before {
+      width: 20px;
+      height: 40px;
+    
+      border-radius: 4px;
+    }
+    
+    .button.pause:before {
+      width: 10px;
+      height: 30px;
+      border-radius: 4px;
+    }
+    
+    .button.play:after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 24px;
+      height: 24px;
+      background-image: url('https://img.icons8.com/fluency/48/play.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      opacity: 1;
+      transition: opacity 0.5s;
+    }
+    
+    .button.pause:after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 24px;
+      height: 24px;
+      background-image: url('https://img.icons8.com/fluency/48/pause.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      opacity: 1;
+      transition: opacity 0.5s;
+    }
+  </style>
+</head>
+<body>
+  <div class="button play" onclick="toggleButton(this)"></div>
+
+  <script>
+    function toggleButton(button) {
+      button.classList.toggle('play');
+      button.classList.toggle('pause');
+    }
+  </script>
+</body>
+</html> 
+
+
+

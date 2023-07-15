@@ -53,3 +53,9 @@ function rotateClockHands() {
   }
 
   stars.forEach(star => star.addEventListener('change', handleRating));
+
+// play button 
+function toggleButton(button) {
+  button.classList.toggle('play');
+  button.classList.toggle('pause');
+}
