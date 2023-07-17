@@ -24,3 +24,17 @@ function scrollToTop() {
   document.body.scrollTop = 0; 
   document.documentElement.scrollTop = 0; 
 }
+
+window.addEventListener('load', function () {
+  var preloader = document.getElementById('preloader');
+  preloader.style.display = 'none';
+});
+
+function scrollToTop() {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+}
+
+
