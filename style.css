@@ -1,7 +1,6 @@
 * {
   padding: 0;
   margin: 0;
-  /* box-sizing: border-box; */
   font-family: "Lato", sans-serif;
   scroll-behavior: smooth;
 }
@@ -13,7 +12,6 @@
   color: #fff !important;
 }
 .navbar-collapse {
-  /* flex-basis: 100%; */
   flex-grow: 0 !important;
   align-items: center;
   justify-content: space-around;
@@ -23,13 +21,8 @@
   justify-content: space-around;
   align-items: center;
   padding: 30px;
-  /* background-image: linear-gradient(323deg, rgb(32, 32, 32), rgb(21, 21, 78), rgb(23, 32, 49), rgb(32, 32, 32)); */
   background-image: linear-gradient(65deg, grey, grey, black);
-  /* background-image: url('./Assets/galaxy.jpg'); */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   position: sticky;
-  /* border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px; */
 }
 
 @media (max-width:768px) {
@@ -177,27 +170,22 @@
   }
 }
 
-/* parallax effect */
 
-body, html{
-  height: 100%;
-  /* margin: 0; */
+.main-body, html{
   font-size: 16px;
-  /* font-family: "Lato", sans-serif; */
   font-weight: 400;
   line-height: 1.8em;
-  /* color: #666; */
+  background: linear-gradient(#2b1055, #7597de);
+  min-height: 100vh;
+
 }
 
-.pimg1, .pimg2, .pimg3{
+/* .pimg1, .pimg2, .pimg3{
   position: relative;
   opacity: 0.70;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  /* parallax effect */
-  /* fixed = parallax
-  scroll = normal */
   background-attachment: fixed;
 
 }
@@ -258,5 +246,104 @@ body, html{
   .pimg1, .pimg2, .pimg3{
       background-attachment: scroll;
   }
+} */
+
+.parallax-section{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  padding: 100px;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
 }
+.parallax-section::before{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  background-image: linear-gradient(to top, #1c0522, transparent);
+  z-index: 1000;
+}
+.parallax-section img{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.parallax-section img #moon{
+  mix-blend-mode: screen;
+}
+#bats{
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 500px;
+  height: 500px;
+  transform: translateX(-50%);
+  display: none;
+  animation-duration: 1s; /* Set the duration of the animation */
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}   
+@keyframes batFlying {
+  0% { top: 200px; } /* Starting position */
+  50% { top: 150px; } /* Midway point - flying up */
+  100% { top: 200px; } /* Ending position - flying down to the initial position */
+}
+#moon{
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 300px;
+  height: 300px;
+  transform: translateX(-50%);
+}
+.parallax-section img #mountain-front{
+  z-index: 10;
+}
+/* #mountain-back{
+  opacity: 50%;
+} */
+
+#text{
+  position: absolute;
+  color: #fff;
+  white-space: nowrap;
+  font-size: 7.5vw;
+  z-index: 9;
+  transform: translateY(150px);
+  /* right: -800px; */
+}
+#btn{
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 30px;
+  border-radius: 40px;
+  background: #fff;
+  color: #2b1055;
+  font-size: 1.5em;
+  z-index: 9;
+  height: 42px;
+  transform: translateY(300px);
+}
+.sec{
+  position: relative;
+  padding: 100px;
+  /* background-color: #1c0522 */
+}
+.sec h2{
+  font-size: 4.5em;
+  margin-bottom: 10px;
+}
+.sec p{
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
 
