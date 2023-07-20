@@ -1,29 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC&display=swap');
+
+
+
 .title-container {
     background-color: #f3f1db;
+    display: flex;
+    justify-content: center;
     border: 1px solid black;
     margin-inline: 6vh;
+    font-family: 'Playfair Display SC', serif;
+    font-size: 7vw;
 }
 
+#heading {
+    font-family: 'Playfair Display SC', serif;
+    font-size: 3vw;
 
+}
 
+#para {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1vw;
+}
 
 
 .content-container {
     background-color: #f3f1db;
+    font-family: 'Times New Roman', Times, serif;
     margin-inline: 6vh;
     display: flex;
     justify-content: center;
     align-items: flex-start;
     flex-wrap: wrap;
-    height: 85vh;
+}
 
 
 .article {
+    margin-inline: 6vh;
     margin: 30px;
     padding: 30px;
     border: 1px solid black;
+    max-width: 500px;
+    
 }
+
+.article img {
+    opacity: 0.55;
+    display: block;
+    margin: 0 auto;
+    max-width: 440px;
+    }
+
+
 
 .article-2 {
     
 }
+
