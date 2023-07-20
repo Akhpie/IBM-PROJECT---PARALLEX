@@ -65,19 +65,19 @@ function loadMovieDetails() {
 function displayMovieDetails(details) {
     resultGrid.innerHTML=`
     <div class="movie-poster">
-    <img src="${(details.Poster != "N/A") ? details.Poster : "image_not_found.png"}" alt="movie poster">
+    <img src="${(details.Poster != "N/A") ? details.Poster : "image_not_found.png"}" alt="movie poster" class = "movie-img">
     </div>
     <div class ="movie-info">
         <h3 class="movie-title">${details.Title}</h3>
         <ul class="movie-misc-info">
             <li class ="year">${details.Year}</li>
-            <li class ="Released">Realeased: ${details.Released}</li>
+            <li class ="Released">Released: ${details.Released}</li>
         </ul>
-        <p class="Director"><b>Director:</b>${details.Director}</p>
-        <p class="Genre"><b>Genre:</b>${details.Genre}</p>
-        <p class="imdbRating"><b>imdb:</b>${details.imdbRating}</p>
-        <p class="language"><b>Language:</b> ${details.Language}</p>
-        <p class="Plot"><b>Plot:</b> ${details.Plot}</p>
+        <p class="Director"><b>Director: </b>${details.Director}</p>
+        <p class="Genre"><b>Genre: </b>${details.Genre}</p>
+        <p class="imdbRating"><b>imdb: </b>${details.imdbRating}</p>
+        <p class="language"><b>Language: </b> ${details.Language}</p>
+        <p class="Plot"><b>Plot: </b> ${details.Plot}</p>
     </div>
     `;
 }
