@@ -105,9 +105,13 @@ img{
     transition: background-color 200ms ease;
     border-radius: 5px;
     margin: 5px;
+    /* width: 100%; */
+    overflow-x: hidden;
 }
 .search-list .search-list-item:Hover{
     background-color: #1f1f1f;
+    transform: scale(0.9);
+    overflow: hidden;
 
 }
 .search-list-item{
