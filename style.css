@@ -21,17 +21,15 @@
   justify-content: space-around;
   align-items: center;
   padding: 30px;
-  background-image: linear-gradient(65deg, grey, grey, black);
+  /* background-image: linear-gradient(65deg, grey, grey, black); */
+  background-image: linear-gradient(to right, #5a75e6, #8f6ed5);
   /* background-image: none; */
   position: sticky;
 }
-
-@media (max-width:768px) {
-  .navbar{
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
-  }
+.navbar-toggler {
+  border: none;
 }
+
 
 .navbar h2 {
   margin: 0;

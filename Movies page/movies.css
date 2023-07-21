@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tektur&display=swap');
 
 :root{
     --md-dark-color: #1d1d1d;
@@ -26,21 +27,13 @@ img{
     padding: 0 1rem;
 }
 .search-container{
-    background-color: var(--md-dark-color);
+    /* background-color: var(--md-dark-color); */
+    background-image: linear-gradient(69deg, rgb(42, 68, 61), rgb(187, 247, 247));
     height: 180px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-/* .logo{
-    padding:1rem 0;
-    border-bottom: 1px solid var(--light-dark-color);
-} */
-/* .logo p{
-    font-size: 2rem;
-    color: #fff;
-    font-weight: bold;
-} */
 .logo p span{
     color: var(--yellow-color);
 }
@@ -58,21 +51,42 @@ img{
     color: #fff;
     font-weight: 500;
     margin-bottom: 1.5rem;
+    /* font-family: 'Tektur', cursive; */
+}
+.search-movies-title{
+    align-self: center;
+    margin-right: 1rem;
+    font-size: 2rem;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+    font-family: 'Tektur', cursive;
 }
 .search-element .form-control{
-    padding: 1rem 2rem;
+    padding: 1rem 1rem;
     font-size: 1.4rem;
-    /* border-top-left-radius: 3px;
-    border-bottom-left-radius:3px; */
     border-radius: 15px;
     border: none;
     outline: none;
     color: var(--light-dark-color);
-    width: 300px;
+    width: 280px;
 }
-.search-element .form-control:focus{
-    color: #fa0000;
-}
+.custom-search {
+    /* padding: 10px; */
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #333;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s ease;
+
+  }
+  
+  .custom-search:focus {
+    outline: none;
+    border-color: #66afe9;
+    box-shadow: 0 0 5px #66afe9;
+  }
 .search-list{
     position: absolute;
     right: 0;
@@ -89,6 +103,8 @@ img{
     color: #fff;
     cursor: pointer;
     transition: background-color 200ms ease;
+    border-radius: 5px;
+    margin: 5px;
 }
 .search-list .search-list-item:Hover{
     background-color: #1f1f1f;
@@ -120,7 +136,8 @@ img{
     box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
 }
 .search-list::-webkit-scrollbar-thumb{
-    background-color: var(--yellow-color);
+    /* background-color: var(--yellow-color); */
+    background-image: linear-gradient(69deg, rgb(42, 68, 61), rgb(187, 247, 247));
     outline: none;
     border-radius: 10px;
 }
@@ -129,9 +146,11 @@ img{
 }
 .result-container{
     padding: 3rem 0;
+    /* background-image: linear-gradient(95deg, grey, black, grey); */
+
 }
 .movie-poster img{
-    max-width: 300px;
+    max-width: 400px;
     margin: 0 auto;
     cursor: pointer;
 }
@@ -147,20 +166,27 @@ img{
     text-align: center;
     color:#fff;
     border-radius: 6px;
-    padding-left: 10px;
+    padding-left: 20px;
     padding-right: 10px;
-    padding-top: 2rem;
+    margin-top: 2rem;
+    padding-bottom: 10px;
     /* background-color: rgb(51, 51, 51); */
-    /* background-image: linear-gradient(65deg, rgb(26, 25, 25), rgb(59, 59, 59)); */
+    background-image: linear-gradient(90deg, rgb(26, 25, 25),rgb(126, 125, 125));
     -webkit-box-shadow: 1px 23px 0px -14px rgba(0,0,0,0.75);
     -moz-box-shadow: 1px 23px 0px -14px rgba(0,0,0,0.75);
     box-shadow: 1px 23px 0px -14px rgba(0,0,0,0.75);
+    cursor: pointer;
+}
+.movie-info:hover{
+    transition: 0.3s;
+    transform: translateY(-10px);
 }
 .movie-title{
     font-size: 2.5rem;
     /* color: var(--yellow-color); */
     /* color: rgb(154, 223, 188); */
-    background: -webkit-linear-gradient(#034646, #0bf36c);
+    padding-top: 2rem;
+    background: -webkit-linear-gradient(180deg,rgb(4, 92, 92),#01fdfd, #0dd8df);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: bold;
@@ -191,7 +217,7 @@ img{
     /* color: var(--yellow-color); */
     font-style: italic;
     line-height: 25px;
-    background: -webkit-linear-gradient(#06f7f7, #21817e);
+    background: -webkit-linear-gradient(#06f7f7, #229c98);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: 600;
@@ -232,7 +258,7 @@ b{
     }
     .movie-info{
         margin-top: 10px;
-        padding-bottom: 10px;
+        background-image: none;
     }
 }
 
