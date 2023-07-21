@@ -276,6 +276,10 @@ b{
         margin-top: 10px;
         background-image: none;
     }
+    .search-element{
+        margin-top: 30px;
+    }
+
 }
 
 @media(min-width: 800px){
