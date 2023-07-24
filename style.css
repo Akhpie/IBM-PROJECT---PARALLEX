@@ -5,10 +5,10 @@
   scroll-behavior: smooth;
 }
 
-.navbar-brand{
+.navbar-brand {
   color: #fff;
 }
-.logo{
+.logo {
   color: #fff !important;
 }
 .navbar-collapse {
@@ -29,7 +29,6 @@
 .navbar-toggler {
   border: none;
 }
-
 
 .navbar h2 {
   margin: 0;
@@ -58,7 +57,7 @@
 }
 
 .navbar ul li a:before {
-  content: '';
+  content: "";
   position: absolute;
   bottom: -5px;
   left: 0;
@@ -79,9 +78,8 @@
   transform: scaleX(1);
 }
 
-
 .navbar ul li a:after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: -5px;
   left: 0;
@@ -151,49 +149,48 @@
   .navbar .menu-items.active {
     display: block;
   }
-} 
+}
 
-#scrollToTopBtn{
+#scrollToTopBtn {
   animation: scrollup 2s ease 5s infinite;
 }
 
-@keyframes scrollup{
-  0%{
+@keyframes scrollup {
+  0% {
     transform: translateY(-10px);
   }
-  50%{
+  50% {
     transform: translateY(0px);
   }
-  100%{
+  100% {
     transform: translateY(-10px);
   }
 }
 
-
-.main-body, html{
+.main-body {
   font-size: 16px;
   font-weight: 400;
   line-height: 1.8em;
   background: linear-gradient(#2b1055, #7597de);
   min-height: 100vh;
-
 }
 
 /* another parallax */
-.second-parallax{
+.second-parallax {
   margin-top: 10px;
   background-color: #000;
   border: 2px solid red;
   height: 100%;
 }
-.pimg1, .pimg2, .pimg3{
+.pimg1,
+.pimg2,
+.pimg3 {
   position: relative;
-  opacity: 0.70;
+  opacity: 0.7;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-
 }
 
 /* .pimg1{
@@ -201,32 +198,32 @@
   min-height: 100%;
 } */
 
-.pimg2{
-  background-image: url('./Assets/city\ 2.jpg');
+.pimg2 {
+  background-image: url("./Assets/city\ 2.jpg");
   min-height: 400px;
 }
 
-.pimg3{
-  background-image: url('./Assets/city\ 3.jpg');
+.pimg3 {
+  background-image: url("./Assets/city\ 3.jpg");
   min-height: 400px;
 }
 
-.section{
+.section {
   text-align: center;
   padding: 50px 80px;
 }
 
-.section-lighttt{
+.section-lighttt {
   background: #f4f4f4;
   color: #666;
 }
 
-.section-darkkk{
+.section-darkkk {
   background-color: #282e34;
   color: #ddd;
 }
 
-.ptext{
+.ptext {
   position: absolute;
   top: 50%;
   width: 100%;
@@ -237,24 +234,26 @@
   text-transform: uppercase;
 }
 
-.ptext .border{
+.ptext .border {
   background-color: #111;
   color: #fff;
   padding: 20px;
 }
 
-.transperant{
+.transperant {
   background-color: transparent;
   color: #fff;
 }
 
-@media (max-width:768px){
-  .pimg1, .pimg2, .pimg3{
-      background-attachment: scroll;
+@media (max-width: 768px) {
+  .pimg1,
+  .pimg2,
+  .pimg3 {
+    background-attachment: scroll;
   }
 }
 
-.parallax-section{
+.parallax-section {
   position: relative;
   width: 100%;
   height: 100vh;
@@ -263,8 +262,8 @@
   justify-content: center;
   overflow: hidden;
 }
-.parallax-section::before{
-  content: '';
+.parallax-section::before {
+  content: "";
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -272,7 +271,7 @@
   background-image: linear-gradient(to top, #1c0522, transparent);
   z-index: 1000;
 }
-.parallax-section img{
+.parallax-section img {
   position: absolute;
   top: 0;
   left: 0;
@@ -281,10 +280,10 @@
   object-fit: cover;
 }
 
-.parallax-section img #moon{
+.parallax-section img #moon {
   mix-blend-mode: screen;
 }
-#bats{
+#bats {
   position: absolute;
   top: 0;
   left: 50%;
@@ -295,13 +294,19 @@
   animation-duration: 1s; /* Set the duration of the animation */
   animation-timing-function: linear;
   animation-iteration-count: infinite;
-}   
-@keyframes batFlying {
-  0% { top: 200px; } /* Starting position */
-  50% { top: 150px; } /* Midway point - flying up */
-  100% { top: 200px; } /* Ending position - flying down to the initial position */
 }
-#moon{
+@keyframes batFlying {
+  0% {
+    top: 200px;
+  } /* Starting position */
+  50% {
+    top: 150px;
+  } /* Midway point - flying up */
+  100% {
+    top: 200px;
+  } /* Ending position - flying down to the initial position */
+}
+#moon {
   position: absolute;
   top: 0;
   left: 50%;
@@ -309,14 +314,14 @@
   height: 300px;
   transform: translateX(-50%);
 }
-.parallax-section img #mountain-front{
+.parallax-section img #mountain-front {
   z-index: 10;
 }
 /* #mountain-back{
   opacity: 50%;
 } */
 
-#text{
+#text {
   position: absolute;
   color: #fff;
   white-space: nowrap;
@@ -325,7 +330,7 @@
   transform: translateY(150px);
   /* right: -800px; */
 }
-#btn{
+#btn {
   text-decoration: none;
   display: inline-block;
   padding: 8px 30px;
@@ -337,19 +342,17 @@
   height: 42px;
   transform: translateY(300px);
 }
-.sec{
+.sec {
   position: relative;
   padding: 100px;
   /* background-color: #1c0522 */
 }
-.sec h2{
+.sec h2 {
   font-size: 4.5em;
   margin-bottom: 10px;
 }
-.sec p{
+.sec p {
   font-size: 1.2em;
   margin-bottom: 10px;
   color: #fff;
 }
-
-
