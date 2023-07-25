@@ -14,12 +14,13 @@
     border-bottom: 6px double  #888244b7;
     /* margin-inline: 6vh; */
     font-family: 'Playfair Display SC', serif;
-    font-size: 7vw;
+    font-size: 6.6vw;
 }
 
 #heading {
     font-family: 'Playfair Display SC', serif;
     font-size: 4vw;
+    
 
 }
 
@@ -70,21 +71,21 @@
     .article {
         margin: 10px;
         padding: 10px;
-        max-width: 300px;
+        max-width: 380px;
     }
     .article img {
-        max-width: 280px;
+        max-width: 300px;
     }
     .title-container {
-        font-size: 10vw;
+        font-size: 9vw;
     }
     #heading {
-        font-size: 8.5vw;
+        font-size: 8vw;
     }
     #para {
-        font-size: 4.5svw;
+        font-size: 20px;
     }
     #dayAndDate {
-        font-size: 3vw;
+        font-size: 5vw;
     }
 }
