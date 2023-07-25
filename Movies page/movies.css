@@ -1,13 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Belanosima:wght@400;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Tektur&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
 
 :root{
     --md-dark-color: #1d1d1d;
-    --dark-color:#171717;
+    --dark-color:rgb(1, 1, 1);
     --light-dark-color:#292929;
     --yellow-color:#d4aa11;
     --cyan-color: cyan;
 }
+
+
 a{
     text-decoration: none;
 }
@@ -19,7 +22,8 @@ img{
 
 .wrapper{
     min-height: 100vh;
-    background-color: var(--dark-color);
+    /* background-color: var(--dark-color); */
+    background:linear-gradient(180deg, rgb(1, 1, 1),#009e797b, rgb(1,1,1));
 }
 .wrapper .container{
     max-width: 1200px;
@@ -28,8 +32,9 @@ img{
 }
 .search-container{
     /* background-color: var(--md-dark-color); */
-    background-image: linear-gradient(69deg, rgb(42, 68, 61), rgb(187, 247, 247));
-    height: 180px;
+    /* background-image: linear-gradient(69deg, rgb(42, 68, 61), rgb(187, 247, 247)); */
+    background:linear-gradient(90deg, rgb(1, 1, 1),#009e797b);
+    height: 80px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -48,7 +53,7 @@ img{
     align-self: center;
     margin-right: 1rem;
     font-size: 2rem;
-    color: #fff;
+    color:#bdc9c6;
     font-weight: 500;
     margin-bottom: 1.5rem;
     /* font-family: 'Tektur', cursive; */
@@ -57,19 +62,23 @@ img{
     align-self: center;
     margin-right: 1rem;
     font-size: 2rem;
-    color: #fff;
+    color:#009e79;
     font-weight: 500;
     margin-bottom: 1.5rem;
-    font-family: 'Tektur', cursive;
+    font-family: 'Quicksand', sans-serif;
+
 }
 .search-element .form-control{
-    padding: 1rem 1rem;
+    padding: 1rem 0.rem;
     font-size: 1.4rem;
-    border-radius: 15px;
+    border-radius: 6.5px;
     border: none;
     outline: none;
-    color: var(--light-dark-color);
+    /* color: var(--light-dark-color); */
+    color: whitesmoke;
     width: 280px;
+    background-color: rgba(19, 18, 18, 0.801);
+    
 }
 .custom-search {
     /* padding: 10px; */
@@ -77,7 +86,7 @@ img{
     border-radius: 5px;
     font-size: 16px;
     color: #333;
-    background-color: #f9f9f9;
+    background-color: rgb(98, 58, 58);
     transition: border-color 0.3s ease;
 
   }
@@ -96,7 +105,8 @@ img{
     z-index: 10;
 }
 .search-list .search-list-item{
-    background-color: var(--light-dark-color);
+    /* background-color: var(--light-dark-color); */
+    background-color: black;
     padding: 0.5rem;
     border-bottom: 1px solid var(--dark-color);
     width: calc(350px - 8px);
@@ -161,6 +171,7 @@ img{
 
 .movie-poster img:hover{
     transform: translateY(-5px);
+    transition-timing-function: ease-in-out;
     transition: 0.3s;
     -webkit-box-shadow: 10px 9px 0px -1px rgba(0,0,0,0.75);
     -moz-box-shadow: 10px 9px 0px -1px rgba(0,0,0,0.75);
@@ -175,7 +186,7 @@ img{
     margin-top: 2rem;
     padding-bottom: 10px;
     /* background-color: rgb(51, 51, 51); */
-    background-image: linear-gradient(90deg, rgb(26, 25, 25),rgb(126, 125, 125));
+    background-image: linear-gradient(90deg, rgb(33, 30, 30),#009e79b7);
     -webkit-box-shadow: 1px 23px 0px -14px rgba(0,0,0,0.75);
     -moz-box-shadow: 1px 23px 0px -14px rgba(0,0,0,0.75);
     box-shadow: 1px 23px 0px -14px rgba(0,0,0,0.75);
@@ -190,7 +201,7 @@ img{
     /* color: var(--yellow-color); */
     /* color: rgb(154, 223, 188); */
     padding-top: 2rem;
-    background: -webkit-linear-gradient(180deg,rgb(4, 92, 92),#01fdfd, #0dd8df);
+    background: -webkit-linear-gradient(180deg,rgb(84, 158, 158),rgb(218, 226, 212),rgb(218, 226, 212));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: bold;
@@ -203,10 +214,10 @@ img{
     padding: 1rem;
 }
 .year{
-    color: red;
+    color: rgb(218, 226, 212);
 }
 .Released{
-    color: red;
+    color: rgb(218, 226, 212);
 }
 
 .movie-info .year{
@@ -220,16 +231,19 @@ img{
 .movie-info .language,.Director,.Genre,.imdbRating,.Plot{
     /* color: var(--yellow-color); */
     font-style: italic;
+    color: bisque;
     line-height: 25px;
-    background: -webkit-linear-gradient(#06f7f7, #229c98);
+    /* background: -webkit-linear-gradient(#06f7f7, #229c98); */
+    background: -webkit-linear-gradient(180deg,rgb(84, 158, 158),rgb(218, 226, 212),rgb(218, 226, 212));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: 600;
 }
 
 b{
-    background: -webkit-linear-gradient(#034646, #0bf36c);
+    background: -webkit-linear-gradient(180deg,rgb(218, 226, 212),rgb(218, 226, 212));
     -webkit-background-clip: text;
+    color: bisque;
     -webkit-text-fill-color: transparent;
     font-size: 600;
 }
@@ -263,6 +277,12 @@ b{
     .movie-info{
         margin-top: 10px;
         background-image: none;
+    }
+    .search-element{
+        margin-top: 25px;
+    }
+    .search-container{
+        height: 200px;
     }
 }
 
