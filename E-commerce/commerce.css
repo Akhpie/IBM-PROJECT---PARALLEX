@@ -83,6 +83,12 @@ header {
   position: sticky;
   top: 0;
   left: 0;
+  background-image: linear-gradient(
+    65deg,
+    var(--primary-color),
+    var(--primary-color),
+    cyan
+  );
 }
 
 #navbar {
@@ -186,6 +192,7 @@ header {
   justify-content: space-between;
   padding: 20px;
   flex-wrap: wrap;
+  background-color: aliceblue;
 }
 #product1 .pro-title,
 #product1 .pro h5,
@@ -269,7 +276,7 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  background-image: url(Img/model1.jpg);
+  background-image: url(Img/buy1get1.avif);
   min-width: 540px;
   height: 50vh;
   background-size: cover;
@@ -278,7 +285,7 @@ header {
 }
 
 #sm-banner .banner-box2 {
-  background-image: url(Img/model2.jpg);
+  background-image: url(Img/luxury\ bags.jpg);
 }
 
 #sm-banner {
@@ -460,7 +467,8 @@ button.white {
   /* background-color: aliceblue; */
   box-shadow: -2px 0 4px hsl(0 4% 15% /10%);
   transition: 0.3s;
-  background-color: #fff;
+  /* background-color: #fff; */
+  background-image: linear-gradient(white, rgb(74, 181, 252), rgb(42, 78, 240));
 }
 
 .cart.active {
@@ -480,8 +488,10 @@ button.white {
   align-items: center;
   gap: 1rem;
   margin-top: 1rem;
-  border: 2px inset var(--secondary-color);
+  /* border: 2px inset var(--secondary-color); */
   border-radius: 5px;
+  padding: 10px;
+  background-image: linear-gradient(180deg, cadetblue, blue);
 }
 
 .cart-img {
@@ -502,24 +512,26 @@ button.white {
 }
 .cart-product-title {
   font-size: 1rem;
+  color: white;
 }
 
 .cart-price {
   font-weight: 500;
+  color: white;
 }
 
 .cart-quantity {
-  border: 1px solid #222;
+  border: none;
+  border-radius: 5px;
   outline-color: #cce7d0;
   width: 2.4rem;
   text-align: center;
   font-size: 1rem;
-  border-color: var(--secondary-color);
 }
 
 .cart-remove {
   font-size: 20px;
-  color: grey;
+  color: rgb(0, 0, 0);
   cursor: pointer;
 }
 .cart-remove:hover {
