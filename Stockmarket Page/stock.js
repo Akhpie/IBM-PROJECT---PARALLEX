@@ -104,7 +104,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const totalRevenue = stockData.datasets[0].data.reduce((total, value) => total + value, 0);
     document.getElementById('totalRevenue').textContent = `$${totalRevenue.toFixed(2)}`;
 
-    // Sample data for the scatter plot (x: stock prices, y: stock volume)
+// Sample data for the scatter plot:
   const scatterData = [];
   for (let i = 0; i < months.length; i++) {
     scatterData.push({
@@ -117,7 +117,7 @@ document.addEventListener('DOMContentLoaded', function () {
     labels: ['Tech', 'Finance', 'Healthcare', 'Energy', 'Retail'],
     datasets: [
       {
-        data: [30, 20, 15, 10, 25], // Sample data for stock distribution (percentage)
+        data: [30, 20, 15, 10, 25],
         backgroundColor: ['#FF6384', '#36A2EB', '#FFCE56', '#4BC0C0', '#FF9F40']
       }
     ]
@@ -186,7 +186,7 @@ document.addEventListener('DOMContentLoaded', function () {
     datasets: [
       {
         label: 'Stock Metrics',
-        data: [8, 7, 6, 9, 8], // Sample data for stock metrics (out of 10)
+        data: [8, 7, 6, 9, 8],
         backgroundColor: 'rgba(255, 99, 132, 0.6)',
         borderColor: 'rgba(255, 99, 132, 1)',
         borderWidth: 1
@@ -194,20 +194,20 @@ document.addEventListener('DOMContentLoaded', function () {
     ]
   };
 
-  // Sample data for the bubble chart (stock correlation between sectors)
+// Sample data for the bubble chart
   const bubbleData = {
     datasets: [
       {
         label: 'Tech',
         data: [
-          { x: 4, y: 8, r: 12 }, // Sample data for Tech sector (x: risk, y: return, r: correlation)
+          { x: 4, y: 8, r: 12 },
         ],
         backgroundColor: 'rgba(255, 99, 132, 0.6)'
       },
       {
         label: 'Finance',
         data: [
-          { x: 6, y: 7, r: 10 }, // Sample data for Finance sector (x: risk, y: return, r: correlation)
+          { x: 6, y: 7, r: 10 },
         ],
         backgroundColor: 'rgba(54, 162, 235, 0.6)'
       },
@@ -256,8 +256,6 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
 
-
-  // Sample data for the mixed chart (stock prices and volume)
   const mixedData = {
     labels: months,
     datasets: [
@@ -276,7 +274,8 @@ document.addEventListener('DOMContentLoaded', function () {
         data: [30000, 28000, 32000, 27000, 29000, 31000, 35000, 38000, 34000, 39000, 36000, 40000]
       }
     ]
-  };// Mixed Chart
+  };
+// Mixed Chart---------------------
   const mixedChartCanvas = document.getElementById('mixedChart').getContext('2d');
   new Chart(mixedChartCanvas, {
     type: 'bar',

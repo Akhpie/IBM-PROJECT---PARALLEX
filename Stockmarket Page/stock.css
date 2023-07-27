@@ -1,18 +1,18 @@
 body {
-  background: #ECECEB !important;
+  background: #1a1a1a !important;
   color: #f5f5f5;
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
 }
 
-.card p{
+.card p {
   font-size: 1.5rem;
   color: green;
   font-weight: 600;
 }
 
-.dash_section{
+.dash_section {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -33,12 +33,12 @@ body {
   padding: 12px 20px;
   text-align: center;
   font-weight: 600;
-  background-color: #f5f5f5;
-  color: #1a1a1a;
+  background-color: #ede7e7;
+  color: #000000;
   border: none;
   border-radius: 30px;
-  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2),
-              -10px -10px 20px rgba(255, 255, 255, 0.5);
+  box-shadow: 8px 8px 16px rgba(113, 112, 112, 0.2),
+              -8px -8px 16px rgba(241, 240, 240, 0.9);
   transition: transform 0.3s ease-in-out;
   cursor: pointer;
 }
@@ -47,48 +47,49 @@ body {
   transform: scale(1.05);
 }
 
-.chart-container, .card-container {
+.chart-container,
+.card-container {
   text-align: center;
   width: calc(43.33% - 40px);
   margin: 30px;
-  background-color: #f5f5f5;
+  background-color: #f7f5f5;
   border-radius: 16px;
   padding: 20px;
   padding-bottom: 60px;
-  box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.2),
-              -8px -8px 16px rgba(255, 255, 255, 0.5);
+  box-shadow: 8px 8px 16px rgba(252, 252, 252, 0.4),
+              -8px -8px 16px rgba(255, 255, 255, 0.1);
   max-height: 400px;
   transition: transform 0.3s ease;
 }
 
-.chart-container:hover, .card-container:hover{
+.chart-container:hover,
+.card-container:hover {
   transform: translateZ(1px) scale(1.1);
-    box-shadow: -4px -4px 10px rgba(163, 177, 198, 0.6),
-                4px 4px 10px rgba(255, 255, 255, 0.5);
+  box-shadow: -4px -4px 10px rgba(255, 255, 255, 0.1),
+              4px 4px 10px rgba(0, 0, 0, 0.4);
 }
 
 .card {
   text-align: center;
 }
 
-/* Responsive styles */
 @media (max-width: 768px) {
-
-  html{
+  html {
     font-size: 50%;
   }
-  .chart-container, .card-container {
+  .chart-container,
+  .card-container {
     width: calc(80% - 40px);
   }
 }
 
 @media (max-width: 415px) {
-  html{
+  html {
     font-size: 50%;
   }
-  .chart-container, .card-container {
+  .chart-container,
+  .card-container {
     width: 80%;
     margin-bottom: 20px;
-
   }
 }
