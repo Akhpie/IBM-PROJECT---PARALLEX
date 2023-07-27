@@ -134,3 +134,9 @@ function updatetotal() {
   document.getElementsByClassName("total-price")[0].innerText = "₹" + total;
 }
 
+$(document).ready(function() {
+  $('.navbar-toggle').click(function() {
+    $(this).toggleClass('active');
+    $('#navbar').toggleClass('active');
+  });
+});
