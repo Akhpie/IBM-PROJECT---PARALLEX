@@ -30,12 +30,12 @@ window.addEventListener('load', function () {
   preloader.style.display = 'none';
 });
 
+//scroll to top
 function scrollToTop() {
   window.scrollTo({
     top: 0,
     behavior: 'smooth'
   });
 }
-
 
 

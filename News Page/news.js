@@ -17,6 +17,7 @@ function scrollToTop() {
   document.documentElement.scrollTop = 0; 
 }
 
+// for date
 function getFormattedDate() {
   const daysOfWeek = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
   const monthsOfYear = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
