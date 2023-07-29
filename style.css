@@ -52,13 +52,15 @@
 
 .navbar ul li a {
   color: white;
-  font-size: larger;
+  /* font-size: larger; */
   text-decoration: none;
   position: relative;
   transition: color 0.3s;
 }
 .heading-main {
-  color: whitesmoke;
+  /* color: whitesmoke; */
+  color: #007bff;
+  text-align: center;
 }
 
 .navbar ul li a:before {
@@ -420,6 +422,13 @@ ul {
   /* background-color: #1c0522 */
   background-color: #282e34;
 }
+.note {
+  background-color: #282e34;
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: -8px 8px 10px rgba(0, 0, 0, 0.4);
+}
 .sec h2 {
   font-size: 4.5em;
   margin-bottom: 10px;
@@ -473,7 +482,9 @@ body {
   flex-direction: column;
   min-height: 100vh;
 }
-
+.contact-para {
+  font-size: 20px;
+}
 main {
   flex: 1;
 }
