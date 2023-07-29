@@ -1,91 +1,83 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display+SC&display=swap");
 
 .newspaper {
-    border: 7px double #888244b7;
-    
+  border: 7px double #888244b7;
 }
 
 .title-container {
-    background-color: #f3f1db;
-    display: flex;
-    justify-content: center;
-    border: 2px double rgba(0, 0, 0, 0.295);
-    border-bottom: 6px double  #888244b7;
-    /* margin-inline: 6vh; */
-    font-family: 'Playfair Display SC', serif;
-    font-size: 6.6vw;
+  background-color: #f3f1db;
+  display: flex;
+  justify-content: center;
+  border: 2px double rgba(0, 0, 0, 0.295);
+  border-bottom: 6px double #888244b7;
+  /* margin-inline: 6vh; */
+  font-family: "Playfair Display SC", serif;
+  font-size: 6.6vw;
 }
 
 #heading {
-    font-family: 'Playfair Display SC', serif;
-    font-size: 4vw;
-    
-
+  font-family: "Playfair Display SC", serif;
+  font-size: 4vw;
 }
 
 #para {
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 2vw;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 2vw;
 }
 
 #dayAndDate {
-    font-family: 'Playfair Display SC', serif;
-    font-size: 1.5vw;
+  font-family: "Playfair Display SC", serif;
+  font-size: 1.5vw;
+  display: contents;
 }
 .content-container {
-    background-color: #f3f1db;
-    font-family: 'Times New Roman', Times, serif;
-    /* margin-inline: 6vh; */
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-wrap: wrap;
+  background-color: #f3f1db;
+  font-family: "Times New Roman", Times, serif;
+  /* margin-inline: 6vh; */
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
 }
 
-
 .article {
-    margin-inline: 6vh;
-    margin: 30px;
-    padding: 30px;
-    
-    border: 2px ridge rgba(0, 0, 0, 0.295);
-    max-width: 500px;
-    
+  margin-inline: 6vh;
+  margin: 30px;
+  padding: 30px;
+
+  border: 2px ridge rgba(0, 0, 0, 0.295);
+  max-width: 500px;
 }
 
 .article img {
-    opacity: 0.55;
-    display: block;
-    margin: 0 auto;
-    max-width: 440px;
-    }
-
-
+  opacity: 0.55;
+  display: block;
+  margin: 0 auto;
+  max-width: 440px;
+}
 
 .article-4 {
-        
 }
 
 @media screen and (max-width: 420px) {
-    .article {
-        margin: 10px;
-        padding: 10px;
-        max-width: 380px;
-    }
-    .article img {
-        max-width: 300px;
-    }
-    .title-container {
-        font-size: 9vw;
-    }
-    #heading {
-        font-size: 8vw;
-    }
-    #para {
-        font-size: 20px;
-    }
-    #dayAndDate {
-        font-size: 5vw;
-    }
+  .article {
+    margin: 10px;
+    padding: 10px;
+    max-width: 380px;
+  }
+  .article img {
+    max-width: 300px;
+  }
+  .title-container {
+    font-size: 9vw;
+  }
+  #heading {
+    font-size: 8vw;
+  }
+  #para {
+    font-size: 20px;
+  }
+  #dayAndDate {
+    font-size: 5vw;
+  }
 }
