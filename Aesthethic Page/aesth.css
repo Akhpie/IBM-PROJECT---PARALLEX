@@ -37,6 +37,9 @@
   body {
     background-size: 100%;
   }
+  .song-card {
+    margin-left: 80px !important;
+  }
 }
 
 @keyframes fadeIn {
@@ -472,3 +475,54 @@ p {
   transition: opacity 0.5s;
 }
 
+/* song card */
+.playlist {
+  display: flex;
+}
+
+.song-card {
+  width: 200px;
+  height: 250px;
+  margin: 10px;
+  padding: 15px;
+  background-color: #f0f0f0;
+  border-radius: 20px;
+  /* box-shadow: 10px 10px 20px #c7c7c7, -10px -10px 20px #ffffff; */
+  background: linear-gradient(145deg, #ffffff, #e6d8d8);
+  box-shadow: 5px 5px 10px #666060, -5px -5px 10px #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  transition: box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.song-card:hover {
+  /* box-shadow: 5px 5px 10px #c7c7c7, -5px -5px 10px #ffffff; */
+  background: linear-gradient(225deg, #ffffff, #e6d8d8);
+  box-shadow: -5px 5px 10px #666060, 5px -5px 10px #ffffff;
+}
+
+.song-card img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: linear-gradient(145deg, #b3b3b3, #d5d5d5);
+  box-shadow: 5px 5px 10px #505050, -5px -5px 10px #ffffff;
+}
+
+.song-details {
+  text-align: center;
+}
+
+.song-title {
+  font-size: 18px;
+  color: #333;
+  margin: 5px 0;
+}
+
+.song-artist {
+  font-size: 14px;
+  color: #555;
+}

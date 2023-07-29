@@ -227,12 +227,13 @@ ul {
 } */
 
 .pimg2 {
-  background-image: url("./Assets/city\ 2.jpg");
+  /* background-image: url("./Assets/city\ 2.jpg"); */
+  background-image: url(./Assets/code\ img.jpg);
   min-height: 400px;
 }
 
 .pimg3 {
-  background-image: url("./Assets/city\ 3.jpg");
+  background-image: url("./Assets/code\ 2\ img.jpg");
   min-height: 400px;
 }
 
@@ -245,10 +246,43 @@ ul {
   background: #f4f4f4;
   color: #666;
 }
-
+.our-aim-heading {
+  color: #0355ad;
+  font-weight: 600;
+}
 .section-darkkk {
-  background-color: #282e34;
+  /* background-color: #282e34; */
+  background-color: #222;
+  padding: 60px 20px;
   color: #ddd;
+}
+.section-darkkk h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+.aim-list li {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  transition: transform 0.2s ease, color 0.2s ease;
+  cursor: pointer;
+}
+.section-darkkk h2 + .aim-list {
+  margin-top: 20px;
+}
+.aim-list {
+  list-style: none;
+  padding: 40px;
+  margin: 0;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.aim-list li:hover {
+  transform: scale(1.03);
+  color: #ffcc00;
 }
 
 .ptext {
@@ -272,6 +306,7 @@ ul {
 .transperant {
   background-color: transparent;
   color: #fff;
+  font-weight: 800;
 }
 
 @media (max-width: 768px) {
@@ -370,6 +405,10 @@ ul {
   z-index: 9;
   height: 42px;
   transform: translateY(300px);
+}
+#btn:hover {
+  transition: 0.5s ease-in-out;
+  background-color: #007bff;
 }
 .sec {
   position: relative;

@@ -4,16 +4,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Stock Dashboard</title>
+  <title>Dashboards</title>
   <link rel="stylesheet" href="stock.css">
   <link rel="stylesheet" href="../style.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
-<body>
+<body class="stock-body">
   <nav class="navbar navbar-expand-lg bg-body-primary">
     <div class="container">
       <a class="navbar-brand logo" href="./index.html">Logo</a>
@@ -49,7 +49,7 @@
     </div>
   </nav>
   <section class="dash_section">
-    <h1 class="title">Stock Market Analysis Dashboard</h1>
+    <h1 class="title" data-aos="zoom-in-down">Stock Market Analysis Dashboard</h1>
     <div class="card-container">
       <div class="card">
         <h2>Total Stock Revenue</h2>
@@ -57,44 +57,44 @@
       </div>
     </div>
     <div class="dash_container">
-      <div class="chart-container">
+      <div class="chart-container" data-aos="fade-right">
         <h2 class="chart-title">Stock Price Trend</h2>
         <canvas id="lineChart"></canvas>
       </div>
-      <div class="chart-container">
+      <div class="chart-container" data-aos="fade-left">
         <h2 class="chart-title">Stock Volume</h2>
         <canvas id="barChart"></canvas>
       </div>
-      <div class="chart-container">
+      <div class="chart-container" data-aos="fade-right">
         <h2 class="chart-title">Stock Distribution</h2>
         <canvas id="pieChart"></canvas>
       </div>
-      <div class="chart-container">
+      <div class="chart-container" data-aos="fade-left">
         <h2 class="chart-title">Sector Allocation</h2>
         <canvas id="polarAreaChart"></canvas>
       </div>
-      <div class="chart-container">
+      <div class="chart-container" data-aos="fade-right">
         <h2 class="chart-title">Stock Scatter Plot</h2>
         <canvas id="scatterChart"></canvas>
       </div>
-      <div class="chart-container">
+      <div class="chart-container" data-aos="fade-left">
         <h2 class="chart-title">Stock Sector Distribution</h2>
         <canvas id="donutChart"></canvas>
       </div>
-      <div class="chart-container">
+      <div class="chart-container" data-aos="fade-right">
         <h2 class="chart-title">Stock Correlation</h2>
         <canvas id="radarChart"></canvas>
       </div>
-      <div class="chart-container">
+      <div class="chart-container" data-aos="fade-left">
         <h2 class="chart-title">Stock Sector Correlation</h2>
         <canvas id="bubbleChart"></canvas>
       </div>
-      <div class="chart-container">
+      <div class="chart-container" data-aos="fade-right">
         <h2 class="chart-title">Stock Comparison</h2>
         <canvas id="mixedChart"></canvas>
       </div>
     </div>
-  
+
   </section>
 
 
@@ -135,5 +135,9 @@
 <script src="stock.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
   integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 
 </html>

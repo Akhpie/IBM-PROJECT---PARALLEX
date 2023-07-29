@@ -57,12 +57,33 @@ function ready() {
     .addEventListener("click", buyButtonClicked);
 }
 function buyButtonClicked() {
-  alert("Your Order is Placed");
+  // alert("Your Order is Placed"); 
   var cartContent = document.getElementsByClassName("cart-content")[0];
   while (cartContent.hasChildNodes()) {
     cartContent.removeChild(cartContent.firstChild);
   }
   updatetotal();
+}
+function buyNow() {
+  var options = {
+    key: 'YOUR_KEY_ID',
+    amount: 10000, // Replace with the actual amount you want to charge in paise/cents
+    currency: 'INR', // Replace with the appropriate currency code
+    name: 'Your Company Name',
+    description: 'Purchase Description',
+    image: 'https://example.com/your_logo.png', // Replace with your logo URL
+    handler: function (response) {
+      // This function will be called after a successful payment
+      alert('Payment successful. Payment ID: ' + response.razorpay_payment_id);
+    },
+    prefill: {
+      email: 'user@example.com', // Replace with the customer's email address
+      contact: '1234567890', // Replace with the customer's phone number
+    },
+  };
+
+  var rzp1 = new Razorpay(options);
+  rzp1.open();
 }
 function removeCartItem(event) {
   var buttonClicked = event.target;
