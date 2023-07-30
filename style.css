@@ -433,6 +433,14 @@ ul {
   font-size: 4.5em;
   margin-bottom: 10px;
 }
+@media (max-width: 768px) {
+  .sec h2 {
+    font-size: 1.8em;
+  }
+  .sec p {
+    font-size: 1em;
+  }
+}
 .sec p {
   font-size: 1.2em;
   margin-bottom: 10px;

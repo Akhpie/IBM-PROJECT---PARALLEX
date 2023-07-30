@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 </head>
 
@@ -81,8 +82,8 @@
     <img src="Assets/moon2.png" alt="" id="moon" />
   </section>
   <div class="sec" id="sec">
-    <h2 class="heading-main">-- About us --</h2>
-    <p class="note">
+    <h2 class="heading-main" data-aos="zoom-in" data-aos-duration="2000">-- About us --</h2>
+    <p class="note" data-aos="zoom-in" data-aos-duration="3000">
       A group of final year students, who's up to work, learn and help you out in anyway possible.
       We are looking for any Projects, Internships and will be glad to learn and deliver the products
     </p>
@@ -98,7 +99,7 @@
 
     <section class="section section-lighttt">
       <h2>A bunch of stuff like...</h2>
-      <ul class="list-container">
+      <ul class="list-container" data-aos="fade-up" data-aos-duration="3000">
         <li class="list-content">Developing websites and web applications</li>
         <li class="list-content">Integrating API'S and Creating API's</li>
         <li class="list-content">Creating Dashboards</li>
@@ -109,14 +110,16 @@
 
     <div class="pimg2">
       <div class="ptext">
-        <span class="transperant"> This site is not like any other. Get ready to witness miracles you have never seen
+        <span class="transperant" data-aos="zoom-in" data-aos-duration="2000"> This site is not like any other. Get
+          ready to witness miracles you
+          have never seen
           before! </span>
       </div>
     </div>
 
     <section class="section section-darkkk" id="our-aim">
-      <h2 class="our-aim-heading">-- Our Aim --</h2>
-      <ul class="aim-list">
+      <h2 class="our-aim-heading" data-aos="fade-right" data-aos-duration="2000">-- Our Aim --</h2>
+      <ul class="aim-list" data-aos="fade-left" data-aos-duration="2000">
         <li>Create Stunning Websites</li>
         <li>Develop User-Friendly Web Applications</li>
         <li>Deliver Cutting-Edge Digital Experiences</li>
@@ -127,23 +130,23 @@
 
     <div class="pimg3">
       <div class="ptext">
-        <span class="transperant"> Welcome to the future </span>
+        <span class="transperant" data-aos="zoom-in"> Welcome to the future </span>
       </div>
     </div>
 
     <section class="section section-darkkk">
-      <h2 class="contact-us">-- Contact us --</h2>
-      <p>
+      <h2 class="contact-us" data-aos="fade-right" data-aos-duration="2000">-- Contact us --</h2>
+      <p data-aos="fade-left" data-aos-duration="2000">
         Do you want to learn more about us or collaborate with our team? Feel free to get in touch with us via email!
       </p>
       <div class="button-container">
-        <a class="cta" href="mailto: parallexuss@gmail.com"><button fdprocessedid="xlhv08"
-            class="button-86">Contact</button></a>
+        <a class="cta" href="mailto: parallexuss@gmail.com"><button fdprocessedid="xlhv08" class="button-86"
+            data-aos="zoom-in">Contact</button></a>
       </div>
       <p></p>
       <!-- google map -->
       <!-- <i id="map-icon" class="fa-solid fa-map-location-dot fa-xl"></i> -->
-      <img id="map-icon" alt="map-icon" src="./Assets/google-map icon.png" title="locate us!">
+      <img id="map-icon" alt="map-icon" src="./Assets/google-map icon.png" title="locate us!" data-aos="zoom-in">
     </section>
     <!-- scroll to top button -->
     <button id="scrollToTopBtn" onclick="scrollToTop()"
@@ -190,8 +193,11 @@
 </body>
 <script src="script.js"></script>
 <script src="gmap.js"></script>
-<!-- <script src="/script.js"></script> -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="parallex.js"></script>
+<script>
+  AOS.init();
+</script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
   integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 
