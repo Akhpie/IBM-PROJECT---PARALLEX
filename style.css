@@ -617,3 +617,7 @@ main {
   width: 50px;
   border-radius: 50%;
 }
+.main-logo:hover {
+  transition: 0.4s ease;
+  transform: scale(1.2) translateY(-2px);
+}

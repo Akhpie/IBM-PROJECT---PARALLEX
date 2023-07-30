@@ -526,3 +526,10 @@ p {
   font-size: 14px;
   color: #555;
 }
+.neu-text {
+  color: #555;
+  margin: 0;
+  text-shadow: 2px 2px 4px #ffffff;
+  padding: 0;
+  text-decoration: overline;
+}
