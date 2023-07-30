@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="preloader.css">
   <script src="preloader.js"></script>
+  <link rel="icon" type="image/x-icon" href="./Assets/logog-removebg-preview.png">
   <!-- <script src="script.js"></script> -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
@@ -37,7 +38,8 @@
 
   <nav class="navbar navbar-expand-lg">
     <div class="container">
-      <a class="navbar-brand logo" href="./index.html">Logo</a>
+      <a class="navbar-brand logo" href="./index.html"><img src="./Assets/logog-removebg-preview.png" alt="" srcset=""
+          class="main-logo"></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
         aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -74,7 +76,7 @@
     <img src="Assets/night sky.png" alt="" id="stars" />
     <!-- <img src="/Assets/bats.png" alt="" id="bats"> -->
     <img src="Assets/city.png" alt="" id="mountain-back" />
-    <h2 id="text">Parallexus</h2>
+    <h2 id="text">PARALLEXUS</h2>
     <a href="#sec" id="btn">Explore</a>
     <img src="Assets/night city skyline.png" alt="" id="mountain-front" />
     <!-- <img src="/Assets/My project-1.png" alt=""  id="mountain-front"> -->
@@ -83,10 +85,15 @@
   </section>
   <div class="sec" id="sec">
     <h2 class="heading-main" data-aos="zoom-in" data-aos-duration="2000">-- About us --</h2>
-    <p class="note" data-aos="zoom-in" data-aos-duration="3000">
-      A group of final year students, who's up to work, learn and help you out in anyway possible.
-      We are looking for any Projects, Internships and will be glad to learn and deliver the products
-    </p>
+    <p class="note" data-aos="zoom-in" data-aos-duration="3000" id="secondary-content">
+
+      We are a motivated and enthusiastic group of final year students, eagerly seeking opportunities to work, learn,
+      and make a difference. With a passion for growth and collaboration, we are actively looking for challenging
+      projects and internships that allow us to apply our knowledge and skills. Our collective commitment to excellence
+      drives us to deliver outstanding results in any task we undertake. As dedicated learners, we are open to acquiring
+      new skills and knowledge to enhance our capabilities. Our cohesive teamwork and resourcefulness ensure that we
+      approach every project with creativity and dedication. We are excited to contribute, grow, and make a positive
+      impact wherever we are given the opportunity. </p>
   </div>
 
   <!-- another parallax -->
@@ -99,7 +106,7 @@
 
     <section class="section section-lighttt">
       <h2>A bunch of stuff like...</h2>
-      <ul class="list-container" data-aos="fade-up" data-aos-duration="3000">
+      <ul class="list-container" data-aos="fade-up" data-aos-duration="3000" id="secondary-content">
         <li class="list-content">Developing websites and web applications</li>
         <li class="list-content">Integrating API'S and Creating API's</li>
         <li class="list-content">Creating Dashboards</li>
@@ -118,8 +125,8 @@
     </div>
 
     <section class="section section-darkkk" id="our-aim">
-      <h2 class="our-aim-heading" data-aos="fade-right" data-aos-duration="2000">-- Our Aim --</h2>
-      <ul class="aim-list" data-aos="fade-left" data-aos-duration="2000">
+      <h2 data-aos="fade-right" data-aos-duration="2000" class="heading-main">-- Our Aim --</h2>
+      <ul class="aim-list" data-aos="fade-left" data-aos-duration="2000" id="secondary-content">
         <li>Create Stunning Websites</li>
         <li>Develop User-Friendly Web Applications</li>
         <li>Deliver Cutting-Edge Digital Experiences</li>
@@ -135,8 +142,8 @@
     </div>
 
     <section class="section section-darkkk">
-      <h2 class="contact-us" data-aos="fade-right" data-aos-duration="2000">-- Contact us --</h2>
-      <p data-aos="fade-left" data-aos-duration="2000">
+      <h2 data-aos="fade-right" data-aos-duration="2000" class="heading-main">-- Contact us --</h2>
+      <p data-aos="fade-left" data-aos-duration="2000" id="secondary-content">
         Do you want to learn more about us or collaborate with our team? Feel free to get in touch with us via email!
       </p>
       <div class="button-container">
@@ -146,7 +153,7 @@
       <p></p>
       <!-- google map -->
       <!-- <i id="map-icon" class="fa-solid fa-map-location-dot fa-xl"></i> -->
-      <img id="map-icon" alt="map-icon" src="./Assets/google-map icon.png" title="locate us!" data-aos="zoom-in">
+      <img id="map-icon" alt="map-icon" src="./Assets/google-map icon.png" title="locate us!" data-aos="flip-right">
     </section>
     <!-- scroll to top button -->
     <button id="scrollToTopBtn" onclick="scrollToTop()"

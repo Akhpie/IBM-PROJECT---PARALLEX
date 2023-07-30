@@ -19,7 +19,6 @@
   text-shadow: 4px 4px #00000036;
   font-size: 5.2vw;
   margin-bottom: none;
-  
 }
 
 #dayAndDate {
@@ -56,7 +55,6 @@
   border: 2px ridge rgba(0, 0, 0, 0.295);
   max-width: 500px;
   min-width: 350px;
-
 }
 
 .article img {
@@ -72,32 +70,31 @@
 @media screen and (max-width: 700px) {
   .article {
     display: grid;
-      margin: 10px;
-      padding: 10px;
-      max-width: 380px;
-      min-width: 300px;
+    margin: 10px;
+    padding: 10px;
+    max-width: 380px;
+    min-width: 300px;
   }
   .article img {
-      max-width: 300px;
+    max-width: 300px;
   }
   .title-container #tct {
-      font-size: 10vw;
+    font-size: 10vw;
   }
   .title-container #dayAndDate {
-      font-size: 5vw;
+    font-size: 5vw;
   }
 
   #heading {
-      font-size: 8vw;
+    font-size: 8vw;
   }
   #para {
-      font-size: 20px;
+    font-size: 20px;
   }
   #dayAndDate {
-      font-size: 5vw;
+    font-size: 5vw;
   }
 }
-
 
 .break {
   background-color: #8882446c;
@@ -111,17 +108,16 @@
 
 #imptext {
   padding-inline: 20px;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
   font-size: 24px;
   padding: 0;
 }
 
 .breakingnews {
-  height: 50px;	
+  height: 50px;
   overflow: hidden;
   position: relative;
   background: #8882446c;
-
 }
 
 /* Move the first paragraph slower */
@@ -133,13 +129,12 @@
   font-weight: bold;
   margin: 0;
   line-height: 50px;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
   font-size: 34px;
   text-align: center;
 
   white-space: nowrap;
-  
-  
+
   /* Starting position */
   transform: translateX(100%);
   /* Apply animation to this element */
@@ -161,10 +156,10 @@
   position: absolute;
   width: 100%;
   height: 100%;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
   font-size: 22px;
   white-space: nowrap;
-  
+
   /* Starting position */
   transform: translateX(100%);
   /* Apply animation to this element */
@@ -181,8 +176,6 @@
   }
 }
 
-
-
 /* footer */
 /* Footer Styles for the news page*/
 .footer {
@@ -193,12 +186,12 @@
 
 .footer h3 {
   color: #fff;
-  font-family: "Playfair Display SC", serif; !important;
+  font-family: "Playfair Display SC", serif !important;
 }
 
 .footer p {
   color: #ccc;
-  font-family: "Times New Roman", Times, serif; !important
+  font-family: "Times New Roman", Times, serif !important;
 }
 
 .social-icons {
@@ -211,10 +204,10 @@
   font-size: 24px;
   color: whitesmoke;
   transition-timing-function: ease !important;
-    transition-property: transform !important;
-    transition-duration: 0.3s !important; 
-    transition-delay: 0s !important;
-    transition: transform 0.3s, background-color 0.3s, color 0.3s !important;
+  transition-property: transform !important;
+  transition-duration: 0.3s !important;
+  transition-delay: 0s !important;
+  transition: transform 0.3s, background-color 0.3s, color 0.3s !important;
 }
 
 .social-icons a:hover {
@@ -244,4 +237,3 @@ main {
   color: #888244b7;
   font-weight: 600;
 }
-

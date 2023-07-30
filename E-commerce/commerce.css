@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;1,300&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;1,300&display=swap");
 :root {
   --primary-color: #088178; /* Teal */
   --secondary-color: #465b52; /* Dark Green */
@@ -54,7 +54,7 @@ p {
   font-size: 16px;
   color: #465b52;
   margin: 15px 0 20px 0;
-  font-family: "Ubuntu", sans-serif;
+  font-family: "Jost", sans-serif;
 }
 
 .section-p1 {
@@ -199,8 +199,19 @@ header {
 #product1 .pro-price {
   color: var(--text-color) !important;
   text-align: center;
+  font-family: "Jost", sans-serif;
+  font-size: 16px !important;
 }
-
+#product1 .pro-title {
+  font-size: 22px !important;
+  font-weight: 400 !important;
+}
+#featured-products {
+  font-size: 40px !important;
+  font-family: "Jost", sans-serif;
+  font-weight: bold;
+  color: #088178;
+}
 #product1 .pro {
   max-width: 250px;
   /* border: 2px outset #cce7d0; */
