@@ -131,79 +131,66 @@
       </div>
     </div>
 
-    <!-- <section class="section section-darkkk">
+    <section class="section section-darkkk">
       <h2 class="contact-us">-- Contact us --</h2>
-      <p class="contact-para">
+      <p>
         Do you want to learn more about us or collaborate with our team? Feel free to get in touch with us via email!
       </p>
       <div class="button-container">
-        <a class="cta" href="mailto:nandyala.akhil@hotmail.com"><button fdprocessedid="xlhv08" class="button-86">Contact</button></a>
+        <a class="cta" href="mailto: parallexuss@gmail.com"><button fdprocessedid="xlhv08"
+            class="button-86">Contact</button></a>
       </div>
-      <i class="fa-solid fa-map-location-dot fa-xl"></i>
+      <p></p>
+      <!-- google map -->
+      <!-- <i id="map-icon" class="fa-solid fa-map-location-dot fa-xl"></i> -->
+      <img id="map-icon" alt="map-icon" src="./Assets/google-map icon.png" title="locate us!">
     </section>
-  </section> -->
-  <section class="section section-darkkk">
-    <h2 class="contact-us">-- Contact us --</h2>
-    <p>
-      Do you want to learn more about us or collaborate with our team? Feel free to get in touch with us via email!
-    </p>
-    <div class="button-container">
-      <a class="cta" href="mailto:nandyala.akhil@hotmail.com"><button fdprocessedid="xlhv08" class="button-86">Contact</button></a>
-    </div>
-    <i id="map-icon" class="fa-solid fa-map-location-dot fa-xl"></i>
-  </section>
+    <!-- scroll to top button -->
+    <button id="scrollToTopBtn" onclick="scrollToTop()"
+      style="display: none; position: fixed; bottom: 20px; right: 60px; border:none; background:none"><img
+        src="../Assets/icons8-scroll-up-48.png" alt="" srcset=""></button>
 
-  <script>
-    let mapWindow = null;
-
-    function openMap() {
-      if (!mapWindow || mapWindow.closed) {
-        const windowFeatures = 'width=800,height=600,left=200,top=100';
-        mapWindow = window.open('https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3804.0884174243984!2d78.16364247379416!3d17.550976598074566!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcbf11b33d2df9d%3A0xccb71d58d5bf59ff!2sGITAM%20(Deemed%20to%20be)%20UNIVERSITY!5e0!3m2!1sen!2sin!4v1690651950800!5m2!1sen!2sin', '_blank', windowFeatures);
-      }
-    }
-
-    document.getElementById('map-icon').addEventListener('click', openMap);
-  </script>
-
-  <button id="scrollToTopBtn" onclick="scrollToTop()"
-    style="display: none; position: fixed; bottom: 20px; right: 60px; border:none; background:none"><img
-      src="../Assets/icons8-scroll-up-48.png" alt="" srcset=""></button>
-
-  <!-- footer -->
-  <footer class="footer">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4">
-          <h3>About Us</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla consequat felis eu ligula mattis eleifend.
-          </p>
+    <!-- footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <h3 style="color: goldenrod;">About Us</h3>
+            <p>
+              We are a group of final-year students eager to work, learn, and help in any way possible. We are actively
+              seeking projects, internships, and opportunities to apply our knowledge and deliver exceptional results.
+            </p>
+          </div>
+          <div class="col-md-4">
+            <h3 style="color: goldenrod;">Contact</h3>
+            <p> <span style="color: goldenrod;">Email:</span> parallexuss@gmail.com <img src="./Assets/gmail icon.png"
+                alt="" srcset=""></p>
+            <p><span style="color: goldenrod;">Phone:</span> +91 6303946132 <img src="./Assets/phone icon.png" alt=""
+                srcset=""></p>
+            <p><span style="color: goldenrod;">Address:</span> somewhere there <img src="./Assets/globe icon.png" alt=""
+                srcset=""></p>
+          </div>
+          <div class="col-md-4">
+            <h3 style="color: goldenrod;">Follow Us</h3>
+            <div class="social-icons">
+              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
         </div>
-        <div class="col-md-4">
-          <h3>Contact</h3>
-          <p>Email: contact@example.com</p>
-          <p>Phone: +1 (123) 456-7890</p>
-          <p>Address: 1234 Main Street, City, Country</p>
-        </div>
-        <div class="col-md-4">
-          <h3>Follow Us</h3>
-          <div class="social-icons">
-            <a href="#"><i class="fab fa-facebook"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
+        <hr style="color: gold;">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <p style="color: goldenrod;">&copy; 2023 Parallexus. All rights reserved.</p>
           </div>
         </div>
       </div>
-      <hr>
-      <div class="row">
-        <div class="col-md-12 text-center">
-          <p>&copy; 2023 Your Website Name. All rights reserved.</p>
-        </div>
-      </div>
-    </div>
-  </footer>
+    </footer>
 </body>
 <script src="script.js"></script>
+<script src="gmap.js"></script>
+<!-- <script src="/script.js"></script> -->
 <script src="parallex.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
   integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
