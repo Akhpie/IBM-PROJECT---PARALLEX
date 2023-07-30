@@ -24,7 +24,7 @@
   align-items: center;
   padding: 30px;
   /* background-image: linear-gradient(65deg, grey, grey, black); */
-  background-image: linear-gradient(to right,#1c0522,#2a0833);
+  background-image: linear-gradient(to right, #1c0522, #2a0833);
   /* background-image: none; */
   position: sticky;
 }
@@ -571,6 +571,10 @@ main {
   transition: 0s;
   transform: translate(0, 5%);
 }
-.map-icon{
+#map-icon {
   cursor: pointer;
+}
+#map-icon:hover {
+  transition: 0.3s;
+  transform: scale(0.9);
 }
