@@ -58,14 +58,13 @@
 }
 
 .article img {
-  opacity: 0.55;
+  opacity: 0.6;
   display: block;
   margin: 0 auto;
   max-width: 440px;
+  border-radius: 5px;
 }
 
-.article-4 {
-}
 
 @media screen and (max-width: 700px) {
   .article {
@@ -118,6 +117,7 @@
   overflow: hidden;
   position: relative;
   background: #8882446c;
+  
 }
 
 /* Move the first paragraph slower */
