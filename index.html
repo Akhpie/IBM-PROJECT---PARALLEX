@@ -70,15 +70,15 @@
   </nav>
 
   <section class="parallax-section">
-    <img src="/Assets/night sky.png" alt="" id="stars" />
+    <img src="Assets/night sky.png" alt="" id="stars" />
     <!-- <img src="/Assets/bats.png" alt="" id="bats"> -->
-    <img src="/Assets/city.png" alt="" id="mountain-back" />
+    <img src="Assets/city.png" alt="" id="mountain-back" />
     <h2 id="text">Parallexus</h2>
     <a href="#sec" id="btn">Explore</a>
-    <img src="/Assets/night city skyline.png" alt="" id="mountain-front" />
+    <img src="Assets/night city skyline.png" alt="" id="mountain-front" />
     <!-- <img src="/Assets/My project-1.png" alt=""  id="mountain-front"> -->
 
-    <img src="/Assets/moon2.png" alt="" id="moon" />
+    <img src="Assets/moon2.png" alt="" id="moon" />
   </section>
   <div class="sec" id="sec">
     <h2 class="heading-main">-- About us --</h2>
@@ -131,19 +131,40 @@
       </div>
     </div>
 
-    <section class="section section-darkkk">
+    <!-- <section class="section section-darkkk">
       <h2 class="contact-us">-- Contact us --</h2>
       <p>
         Do you want to learn more about us or collaborate with our team? Feel free to get in touch with us via email!
       </p>
       <div class="button-container">
-        <a class="cta" href="mailto:nandyala.akhil@hotmail.com"><button fdprocessedid="xlhv08"
-            class="button-86">Contact</button></a>
+        <a class="cta" href="mailto:nandyala.akhil@hotmail.com"><button fdprocessedid="xlhv08" class="button-86">Contact</button></a>
       </div>
-
+      <i class="fa-solid fa-map-location-dot fa-xl"></i>
     </section>
+  </section> -->
+  <section class="section section-darkkk">
+    <h2 class="contact-us">-- Contact us --</h2>
+    <p>
+      Do you want to learn more about us or collaborate with our team? Feel free to get in touch with us via email!
+    </p>
+    <div class="button-container">
+      <a class="cta" href="mailto:nandyala.akhil@hotmail.com"><button fdprocessedid="xlhv08" class="button-86">Contact</button></a>
+    </div>
+    <i id="map-icon" class="fa-solid fa-map-location-dot fa-xl"></i>
   </section>
 
+  <script>
+    let mapWindow = null;
+
+    function openMap() {
+      if (!mapWindow || mapWindow.closed) {
+        const windowFeatures = 'width=800,height=600,left=200,top=100';
+        mapWindow = window.open('https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3804.0884174243984!2d78.16364247379416!3d17.550976598074566!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcbf11b33d2df9d%3A0xccb71d58d5bf59ff!2sGITAM%20(Deemed%20to%20be)%20UNIVERSITY!5e0!3m2!1sen!2sin!4v1690651950800!5m2!1sen!2sin', '_blank', windowFeatures);
+      }
+    }
+
+    document.getElementById('map-icon').addEventListener('click', openMap);
+  </script>
 
   <button id="scrollToTopBtn" onclick="scrollToTop()"
     style="display: none; position: fixed; bottom: 20px; right: 60px; border:none; background:none"><img
