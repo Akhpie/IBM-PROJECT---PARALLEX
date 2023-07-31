@@ -34,14 +34,19 @@
   align-items: center;
   padding: 30px;
   /* background-image: linear-gradient(65deg, grey, grey, black); */
-  background-image: linear-gradient(
-    136deg,
-    #1c0522,
-    #2a0833,
-    rgb(182, 248, 248)
-  );
+  background-image: linear-gradient(to right, #1c0522, #2a0833);
   /* background-image: none; */
   position: sticky;
+}
+@media (max-width: 768px) {
+  .navbar {
+    background-image: linear-gradient(
+      149deg,
+      #1c0522,
+      #2a0833,
+      rgb(194, 252, 252)
+    );
+  }
 }
 .navbar-toggler {
   border: none;
