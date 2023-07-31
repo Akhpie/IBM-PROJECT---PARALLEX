@@ -47,6 +47,9 @@
       rgb(194, 252, 252)
     );
   }
+  .sec {
+    padding: 0px;
+  }
 }
 .navbar-toggler {
   border: none;
@@ -448,7 +451,7 @@ ul {
 }
 .sec {
   position: relative;
-  padding: 100px;
+  padding: 20px;
   /* background-color: #1c0522 */
   background-color: #282e34;
 }
